@@ -1,0 +1,71 @@
+.first-section__header {
+   display: grid;
+   gap: toRem(18);
+   grid-template-areas: 
+   "logo info"
+   "logo nav";
+   justify-content: space-between;
+   @media screen and (max-width: 768px) {
+      gap: toRem(30);
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "info"
+      "logo"
+      "nav";
+   }
+}
+
+.header {
+   &__logo {
+      grid-area: logo;
+   }
+   &__nav,
+   &__info {
+      justify-self: end;
+      @media screen and (max-width: 768px) {
+         justify-self: start;
+      }
+   }
+   &__nav {
+      grid-area: nav;
+   }
+   &__info {
+      grid-area: info;
+   }
+
+   &__link {
+      color: $basic-white;
+      transition: color .3s ease;
+      &:hover {
+         color: $accent;
+      }
+   }
+}
+
+// toggle-lang
+.btn-lang {
+   padding: toRem(5) toRem(7);
+   border-radius: toRem(8);
+   color: $basic-white;
+   &:checked {
+      color: $basic-white;
+   }
+}
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+   color: $basic-white;
+   background-color: $accent;
+   border-color: transparent;
+}
+.btn-check+.btn:hover {
+   color: $accent;
+   background-color: $basic-white;
+   border-color: var(--bs-btn-border-color);
+}
+
+.circle {
+   width: toRem(6);
+   height: toRem(6);
+   background-color: $basic-white;
+   border-radius: 50%;
+   margin: 10px;
+}

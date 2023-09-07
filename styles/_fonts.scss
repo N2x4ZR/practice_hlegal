@@ -1,0 +1,97 @@
+// font-family
+@mixin font-face($font-type, $font-weight) {
+   $pathToFont: "../assets/fonts/" + $font-type;
+   @font-face {
+      font-family: "Montserrat";
+      src: url($pathToFont + ".woff") format("woff"),
+      url($pathToFont + ".woff2") format("woff2");
+      font-weight: $font-weight;
+   }
+}
+
+@include font-face("Montserrat-Regular", 400);
+@include font-face("Montserrat-Bold", 700);
+
+// font-size
+h1, h2, h3, h4 {
+font-weight: 700;
+font-style: normal;
+line-height: normal;
+}
+
+h1 {
+   font-size: toRem($fs-38);
+} 
+h2 {
+   font-size: toRem($fs-30);
+}
+h3 {
+   font-size: toRem($fs-22);
+}
+h4 {
+   font-size: toRem($fs-16);
+}
+
+.body1, .body2, .body3 .body4 {
+   font-weight: 400;
+   font-style: normal;
+}
+.body1 {
+   font-size: toRem($fs-19);
+   line-height: toRem(30); /* 157.895% */
+}
+.body2 {
+   font-size: toRem($fs-16);
+   line-height: toRem(26); /* 162.5% */
+}
+.body3 {
+   font-size: toRem($fs-14);
+   line-height: toRem(22); /* 157.143% */
+}
+.body4 {
+   font-size: toRem($fs-12);
+   font-weight: 700;
+   letter-spacing: toRem(1);
+   text-transform: uppercase;
+}
+.f-bold {
+   font-weight: 700;
+}
+
+// font-colors
+.clr {
+   // grey
+   &__bg {
+      color: $grey-bg;
+   }
+   &__bg-alt {
+      color: $grey-bg-alt;
+   }
+   &__bg-sep {
+      color: $grey-separator;
+   }
+   &__text {
+      color: $grey-text;
+   }
+   // basic 
+   &__black {
+      color: $basic-black;
+   }
+   &__white {
+      color: $basic-white;
+   }
+   // active
+   &__active {
+      color: $active;
+   }
+   &__regular {
+      color: $active-regular;
+   }
+   &__hover {
+      color: $active-hover;
+   }
+   // accent
+   &__accent {
+      color: $accent;
+   }
+}
