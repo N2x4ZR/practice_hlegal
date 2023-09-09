@@ -1,0 +1,36 @@
+.title {
+   gap: 10px;
+   padding-bottom: 60px;
+   &__sub {
+      cursor: pointer;
+      text-transform: uppercase;
+      gap: 2px;
+      stroke: white;
+      &:hover {
+         color: $accent;
+         stroke: $accent;
+      }
+   }
+}
+
+.plus {
+   display: flex;
+   flex-direction: column;
+   gap: toRem(30);
+   &__wrap {
+      row-gap: toRem(30);
+      padding-bottom: 60px;
+   }
+   &__img {
+      padding: toRem(14);
+      background-color: $basic-white;
+      border-radius: toRem(24);
+      max-width: toRem(92);
+      width: 100%;
+   }
+   &__title {
+      display: flex;
+      flex-direction: column;
+      gap: toRem(15);
+   }
+}

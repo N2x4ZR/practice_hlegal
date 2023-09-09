@@ -1,31 +1,46 @@
-.frame__left {
-   padding-right: 60px;
-   border-right: 4px solid rgba(255, 255, 255, 0.30);   
-   white-space: nowrap;
-   display: flex;
-   flex-direction: column;
-   text-align: end;
-   @media screen and (max-width: 768px) {
-      border-right: none;
-      flex-direction: row;
-      overflow-x: auto;
-      text-align: start;
-   }
+.frame-wrap {
+   max-width: 1347px;
+   margin: 0 auto;
 }
 
-.frame__right {
-   margin-left: 60px;
-   @media screen and (max-width: 768px) {
-      margin-left: 0;
-   }
-}
-
-.frame1 {
-   padding: 75px 0 75px 0;
+.frame {
+   padding: 60px 0 60px 0;
+   justify-content: center;
    display: flex;
-   flex-direction: row;
    align-items: center;
-   @media screen and (max-width: 768px) {
+   @media screen and (min-width: 0px) and (max-width: 1024px) {
       flex-direction: column;
    }
+   &__left {
+      padding: 14px 60px 14px 0;
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      border-right: 4px solid rgba(255, 255, 255, 0.30);
+      white-space: nowrap;
+      text-align: end;
+      @media screen and (min-width: 0px) and (max-width: 1024px) {
+         border-right: none;
+         flex-direction: row;
+         width: 100%;
+         margin-bottom: 60px;
+         overflow-x: auto;
+      }
+   }
+   &__right {
+      margin-left: 60px;
+      @media screen and (min-width: 0px) and (max-width: 1024px) {
+         border-top: 4px solid rgba(255, 255, 255, 0.30);
+         margin-left: 0;
+         padding-top: 60px;
+      }
+   }
+   &__btn {
+      cursor: pointer;
+      &:hover {
+         transition: color .3s ease;
+         color: $accent;
+      }
+   }
 }
+
