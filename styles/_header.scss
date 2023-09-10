@@ -22,7 +22,11 @@
    }
 }
 
-
+.logo {
+   @media screen and (max-width: 400px) {
+      width: 70px;
+   }
+}
 
 .header {
    &__logo {
