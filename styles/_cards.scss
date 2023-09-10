@@ -1,6 +1,6 @@
 .title {
    gap: 10px;
-   padding-bottom: 60px;
+   margin-bottom: toRem(60);
    &__sub {
       cursor: pointer;
       text-transform: uppercase;
@@ -9,6 +9,7 @@
       &:hover {
          color: $accent;
          stroke: $accent;
+         transition: stroke, color .3s ease;
       }
    }
 }
@@ -19,7 +20,6 @@
    gap: toRem(30);
    &__wrap {
       row-gap: toRem(30);
-      padding-bottom: 60px;
    }
    &__img {
       padding: toRem(14);

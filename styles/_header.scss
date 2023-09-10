@@ -13,7 +13,16 @@
       "logo"
       "nav";
    }
+   @media screen and (max-width: 400px) {
+      gap: toRem(15);
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "info info"
+      "logo nav";
+   }
 }
+
+
 
 .header {
    &__logo {
@@ -28,11 +37,23 @@
    }
    &__nav {
       grid-area: nav;
+      @media screen and (max-width: 400px) {
+         display: none;
+      }
    }
    &__info {
       grid-area: info;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 400px) {
+         width: 100%;
+         justify-content: space-between;
+         gap: toRem(10);
+         flex-wrap: wrap;
+         padding: toRem(10) 0;
+         background: rgba(245, 245, 250, 0.20);
+      }
    }
-
    &__link {
       color: $basic-white;
       transition: color .3s ease;
@@ -68,4 +89,15 @@
    background-color: $basic-white;
    border-radius: 50%;
    margin: 10px;
+   @media screen and (max-width: 400px) {
+      display: none;
+   }
+}
+
+.nav {
+   &__off {
+      @media screen and (max-width: 400px) {
+         display: none;
+      }
+   }
 }

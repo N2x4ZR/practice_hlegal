@@ -1,10 +1,10 @@
 .frame-wrap {
    max-width: 1347px;
    margin: 0 auto;
+   margin-bottom: toRem(60);
 }
 
 .frame {
-   padding: 60px 0 60px 0;
    justify-content: center;
    display: flex;
    align-items: center;
@@ -41,6 +41,9 @@
          transition: color .3s ease;
          color: $accent;
       }
+   }
+   &__wrap {
+      padding: toRem(60) 0 toRem(60) 0;
    }
 }
 
