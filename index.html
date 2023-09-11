@@ -74,12 +74,15 @@
             </div>
          <!-- !second -->
             <div class="title d-flex flex-column">
-               <a class="title__sub d-flex align-items-center sub__txt body3 clr__white fw-bold">
-                  Services
-                  <svg class="sub__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                     <path d="M3.5 2L8 6.5L3.5 11" stroke="inheret" stroke-width="2"/>
-                  </svg>
-               </a>
+               <!-- TODO subtitle__element -->
+               <div class="">
+                  <a class="title__sub-a body3">
+                     Services
+                     <svg class="sub__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                        <path d="M3.5 2L8 6.5L3.5 11" stroke="inheret" stroke-width="2"/>
+                     </svg>
+                  </a>
+               </div>
                <h1 class="clr__accent">What can we do better than others?</h1>
             </div>
          <!-- !thrid -->
@@ -130,6 +133,47 @@
          </div>
       </div>
    </div>
+   <section class="second-section">
+      <div class="container">
+         <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="carousel-wrap">
+                     <div class="carousel__img-wrap"><img class="carousel__img" src="./assets/image/men.png" alt="men"></div>
+                     <div class="carousel__title">
+                        <div class="carousel__top">
+                           <div class="">
+                              <a class="title__sub-b body3">
+                                 Services
+                                 <svg class="sub__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                    <path d="M3.5 2L8 6.5L3.5 11" stroke="inheret" stroke-width="2"/>
+                                 </svg>
+                              </a>
+                           </div>
+                           <h1>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h1>
+                        </div>
+                        <div class="carousel__bottom">
+                           <p class="body2 fw-bold clr__text">Олександр Олександровський</p>
+                           <p class="body3 clr__text">Керуючий партнер</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <img src="./assets/image/men.png" class="d-block w-100" alt="2">
+               </div>
+               <div class="carousel-item">
+                  <img src="./assets/image/men.png" class="d-block w-100" alt="3">
+               </div>
+            </div>
+            <div class="carousel-indicators">
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+         </div>
+      </div>
+   </section>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>

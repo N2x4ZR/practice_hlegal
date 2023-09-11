@@ -1,0 +1,30 @@
+.title {
+   gap: 10px;
+   margin-bottom: toRem(60);
+   &__sub-a {
+      font-weight: 700;
+      cursor: pointer;
+      text-transform: uppercase;
+      gap: 2px;
+      color: $basic-white;
+      stroke: $basic-white;
+      &:hover {
+         color: $accent;
+         stroke: $accent;
+         transition: stroke, color .3s ease;
+      }
+   }
+   &__sub-b {
+      font-weight: 700;
+      cursor: pointer;
+      text-transform: uppercase;
+      gap: 2px;
+      color: $active-regular;
+      stroke: $active-regular;
+      &:hover {
+         color: $accent;
+         stroke: $accent;
+         transition: stroke, color .3s ease;
+      }
+   }
+}

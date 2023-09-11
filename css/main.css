@@ -1,3 +1,34 @@
+.title {
+  gap: 10px;
+  margin-bottom: 3.75rem;
+}
+.title__sub-a {
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  gap: 2px;
+  color: #FFFFFF;
+  stroke: #FFFFFF;
+}
+.title__sub-a:hover {
+  color: #F0145A;
+  stroke: #F0145A;
+  transition: stroke, color 0.3s ease;
+}
+.title__sub-b {
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: uppercase;
+  gap: 2px;
+  color: #24A3FF;
+  stroke: #24A3FF;
+}
+.title__sub-b:hover {
+  color: #F0145A;
+  stroke: #F0145A;
+  transition: stroke, color 0.3s ease;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   padding: 0;
   margin: 0;
@@ -18,22 +49,6 @@ a {
     max-width: 1600px;
   }
 }
-.title {
-  gap: 10px;
-  margin-bottom: 3.75rem;
-}
-.title__sub {
-  cursor: pointer;
-  text-transform: uppercase;
-  gap: 2px;
-  stroke: white;
-}
-.title__sub:hover {
-  color: #F0145A;
-  stroke: #F0145A;
-  transition: stroke, color 0.3s ease;
-}
-
 .plus {
   display: flex;
   flex-direction: column;
@@ -204,6 +219,32 @@ h4 {
   padding: 3.75rem 0 3.75rem 0;
 }
 
+.carousel-indicators [data-bs-target] {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #24A3FF;
+}
+
+.carousel-indicators {
+  position: static;
+}
+
+.carousel__title {
+  padding: 1.875rem;
+}
+.carousel-wrap {
+  background-color: #F5F5FA;
+  display: flex;
+  border-radius: 12px;
+}
+.carousel__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px 0 0 12px;
+}
 .first-section__header {
   display: grid;
   gap: 1.125rem;
@@ -385,4 +426,8 @@ h4 {
   .first-section {
     padding: 0 0 30px 0;
   }
+}
+
+.second-section {
+  padding: 3.75rem 0 3.75rem;
 }
