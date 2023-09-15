@@ -1,0 +1,38 @@
+.footer {
+   display: grid;
+   grid-template-areas: 
+   "finfo company"
+   "contacts contacts";
+   justify-content: space-between;
+   gap: toRem(20);
+   @media screen and (max-width: 500px) {
+      grid-template-areas: 
+      "finfo"
+      "contacts"
+      "company";
+      justify-content: center;
+      text-align: center;
+      gap: toRem(30);
+   }
+   &__info {
+      grid-area: finfo;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 500px) {
+         flex-direction: column;
+         gap: toRem(10);
+      }
+   }
+   &__company {
+      grid-area: company;
+   }
+   &__contacts {
+      grid-area: contacts;
+      display: flex;
+      align-items: center;
+      @media screen and (max-width: 500px) {
+         flex-direction: column;
+         gap: toRem(10);
+      }
+   }
+}

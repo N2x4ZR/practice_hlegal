@@ -1,11 +1,11 @@
 .title {
    gap: 10px;
-   margin-bottom: toRem(60);
    &__sub-a {
-      font-weight: 700;
+      display: inline-flex; // *flex
+      align-items: center;
       cursor: pointer;
       text-transform: uppercase;
-      gap: 2px;
+      gap: toRem(2);
       color: $basic-white;
       stroke: $basic-white;
       &:hover {
@@ -15,16 +15,30 @@
       }
    }
    &__sub-b {
-      font-weight: 700;
+      display: inline-flex; // *flex
+      align-items: center;
       cursor: pointer;
       text-transform: uppercase;
-      gap: 2px;
+      gap: toRem(2);
       color: $active-regular;
       stroke: $active-regular;
       &:hover {
          color: $accent;
          stroke: $accent;
          transition: stroke, color .3s ease;
+      }
+   }
+}
+
+// *margin
+.m {
+   // todo_bottom
+   &b {
+      &-30 {
+         margin-bottom: toRem(30);
+      }
+      &-60 {
+         margin-bottom: toRem(60);
       }
    }
 }

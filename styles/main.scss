@@ -6,6 +6,9 @@
 @import "./container";
 @import "./cards";
 @import "./fonts";
+@import "./footer";
+@import "./news";
+@import "./table";
 @import "./frame";
 @import "./carousel";
 @import "./header";
@@ -14,9 +17,15 @@
    --bs-font-sans-serif: "Montserrat", "Serif";
 }
 
+.body-wrap {
+   overflow: hidden;
+   width: 100%;
+   position: relative;
+}
+
 // sections-first
 .section-gradient {
-   background: linear-gradient($gradient-supersoft);
+   background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
    min-height: 100vh;
    border-radius: 0 0 toRem(12) toRem(12);
    margin-bottom: toRem(20);
@@ -80,4 +89,14 @@
 
 .second-section {
    padding: toRem(60) 0 toRem(60);
+   transition: padding .3s ease;
+   @media screen and (max-width: 1720px) {
+      padding: toRem(60) 0 0 0;
+      transition: padding .3s ease;
+   }
+}
+
+.thrid-section {
+   padding: toRem(30) 0 toRem(30) 0;
+   background-color: $grey-bg;
 }

@@ -5,175 +5,300 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
    <link rel="stylesheet" href="./css/main.css">
+   <script defer src="./js/main.js"></script>
    <title>hlegal</title>
 </head>
 <body>
-   <div class="section-gradient">
-      <div class="section-gradient__shadow section-gradient__shadow--1"></div>
-      <div class="section-gradient__shadow section-gradient__shadow--2"></div>
-      <main class="main-wrap">
-         <div class="main-wrap__bg">
-            <object class="main-wrap__obj" data="./assets/svg/Symbol.svg" type=""></object>
-         </div>
-         <div class="info-bg"></div>
-         <div class="container">
-            <section class="first-section">
-               <header class="first-section__header">
-                  <div class="header__logo"><img class="logo" src="./assets/svg/Logo.svg" alt="logo"></div>
-                  <nav class="header__nav">
-                     <ul class="header__list d-flex gap-3">
-                        <li><a class="header__link body2 f-bold" href="">about us</a></li>
-                        <li><a class="header__link body2 f-bold" href="">services</a></li>
-                        <li><a class="header__link body2 f-bold" href="">team</a></li>
-                        <li><a class="header__link body2 f-bold" href="">publications</a></li>
-                        <li><a class="header__link body2 f-bold" href="">contact</a></li>
-                     </ul>
-                  </nav>
-                  <div class="header__info">
-                     <div class="toggle-lang d-flex">
-                        <!-- УК -->
-                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
-                        <label class="btn btn-lang body4" for="option1">Ук</label>
-                        <!-- РУ -->
-                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                        <label class="btn btn-lang body4" for="option2">Ру</label>
-                        <!-- EN -->
-                        <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" checked>
-                        <label class="btn btn-lang body4" for="option3">En</label>
+   <div class="body-wrap">
+      <div class="section-gradient">
+         <div class="section-gradient__shadow section-gradient__shadow--1"></div>
+         <div class="section-gradient__shadow section-gradient__shadow--2"></div>
+         <main class="main-wrap">
+            <div class="main-wrap__bg">
+               <object class="main-wrap__obj" data="./assets/svg/Symbol.svg" type=""></object>
+            </div>
+            <div class="container">
+               <section class="first-section">
+                  <header class="first-section__header">
+                     <div class="header__logo"><img class="logo" src="./assets/svg/Logo.svg" alt="logo"></div>
+                     <div class="header__nav">
+                        <button class="header__burger-btn" id="burger">
+                           <span></span><span></span><span></span>
+                        </button>
+                        <nav class="menu" id="menu">
+                           <ul class="menu__list">
+                              <li><a class="menu__link body2 f-bold" href="#">about us</a></li>
+                              <li><a class="menu__link body2 f-bold" href="#">services</a></li>
+                              <li><a class="menu__link body2 f-bold" href="#">team</a></li>
+                              <li><a class="menu__link body2 f-bold" href="#">publications</a></li>
+                              <li><a class="menu__link body2 f-bold" href="#">contact</a></li>
+                           </ul>
+                        </nav>
                      </div>
-                     <div class="circle"></div>
-                     <p class="nav__off body2 clr__white">Kyiv, Mechnikova str, 14/1</p>
-                     <div class="circle"></div>
-                     <a href=”tel:0800211927” class="body2 clr__white f-bold"><b>0800 211 927</b></a>
-                     <div class="circle"></div>
-                     <a class="nav__off" href="https://www.facebook.com/" _target><img src="./assets/svg/Logo_Facebook.svg" alt="logo facebook"></a>
+                     <div class="header__info">
+                        <div class="toggle-lang d-flex">
+                           <!-- УК -->
+                           <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                           <label class="btn btn-lang body4" for="option1">Ук</label>
+                           <!-- РУ -->
+                           <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                           <label class="btn btn-lang body4" for="option2">Ру</label>
+                           <!-- EN -->
+                           <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off" checked>
+                           <label class="btn btn-lang body4" for="option3">En</label>
+                        </div>
+                        <div class="circle"></div>
+                        <p class="nav__off body2 clr__white">Kyiv, Mechnikova str, 14/1</p>
+                        <div class="circle"></div>
+                        <a href=”tel:0800211927” class="body2 clr__white f-bold"><b>0800 211 927</b></a>
+                        <div class="circle"></div>
+                        <a class="nav__off" href="https://www.facebook.com/" target="new"><img src="./assets/svg/Logo_Facebook.svg" alt="logo facebook"></a>
+                     </div>
+                  </header>
+                  <div class="first-section__title text-center clr__white mb-5"><h1>you legal solutions provider</h1></div>
+                  <div class="first-section__btn text-center">
+                     <a href=""><img src="./assets/svg/Scroll.svg" alt="scroll"></a>
                   </div>
-               </header>
-               <div class="first-section__title text-center clr__white mb-5"><h1>you legal solutions provider</h1></div>
-               <div class="first-section__btn text-center">
-                  <a href=""><img src="./assets/svg/Scroll.svg" alt="scroll"></a>
+               </section>
+            </div>
+         </main>
+         <div class="container">
+            <div class="frame__wrap">
+               <div class="frame-wrap">
+                  <div class="frame">
+                     <ul class="frame__left">
+                        <li class="frame__btn clr__grd--redrev"><h1>Consistent</h1></li>
+                        <li class="frame__btn clr__text"><h1>Customer oriented</h1></li>
+                        <li class="frame__btn clr__text"><h1>Innovative</h1></li>
+                        <li class="frame__btn clr__text"><h1>Business oriented</h1></li>
+                     </ul>
+                     <div class="frame__right">
+                        <h2 class="mb-4 clr__white">We turn the idea of legal services</h2>
+                        <p class="body2 clr__text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+                     </div>
+                  </div>
                </div>
-            </section>
-         </div>
-      </main>
-      <div class="container">
-         <div class="frame__wrap">
-            <div class="frame-wrap">
-               <div class="frame">
-                  <ul class="frame__left">
-                     <li class="frame__btn clr__white"><h1>Consistent</h1></li>
-                     <li class="frame__btn clr__text"><h1>Customer oriented</h1></li>
-                     <li class="frame__btn clr__text"><h1>Innovative</h1></li>
-                     <li class="frame__btn clr__text"><h1>Business oriented</h1></li>
-                  </ul>
-                  <div class="frame__right">
-                     <h2 class="mb-4 clr__white">We turn the idea of legal services</h2>
-                     <p class="body2 clr__text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve a number of important decisions for the industry. Many of them form the practice of applying the law of the sea in Ukraine.</p>
+            <!-- !second -->
+               <div class="mb-60 title d-flex flex-column">
+                  <!-- TODO subtitle__element -->
+                  <div class="">
+                     <a class="title__sub-a body3 fw-bold ">
+                        Services
+                        <svg class="sub__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                           <path d="M3.5 2L8 6.5L3.5 11" stroke="inheret" stroke-width="2"/>
+                        </svg>
+                     </a>
+                  </div>
+                  <h1 class="clr__grd--red">What can we do better than others?</h1>
+               </div>
+            <!-- !thrid -->
+               <div class="row plus__wrap">
+                  <div class="plus col-12 col-md-6 col-lg-4">
+                     <img class="plus__img" src="./assets/svg/1.svg" alt="1">
+                     <div class="plus__title">
+                        <h3 class="clr__regular">IT and e-commerce</h3>
+                        <p class="body2 clr__white">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
+                     </div>
+                  </div>
+                  <div class="plus col-12 col-md-6 col-lg-4">
+                     <img class="plus__img" src="./assets/svg/2.svg" alt="2">
+                     <div class="plus__title">
+                        <h3 class="clr__regular">Comprehensive daily legal support</h3>
+                        <p class="body2 clr__white">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
+                     </div>
+                  </div>
+                  <div class="plus col-12 col-md-6 col-lg-4">
+                     <img class="plus__img" src="./assets/svg/3.svg" alt="3">
+                     <div class="plus__title">
+                        <h3 class="clr__regular">Structuring corporate relationships</h3>
+                        <p class="body2 clr__white">Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
+                     </div>
+                  </div>
+                  <div class="plus col-12 col-md-6 col-lg-4">
+                     <img class="plus__img" src="./assets/svg/4.svg" alt="4">
+                     <div class="plus__title">
+                        <h3 class="clr__regular">Building contractual relations</h3>
+                        <p class="body2 clr__white">Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
+                     </div>
+                  </div>
+                  <div class="plus col-12 col-md-6 col-lg-4">
+                     <img class="plus__img" src="./assets/svg/5.svg" alt="5">
+                     <div class="plus__title">
+                        <h3 class="clr__regular">Protection of business, intellectual property</h3>
+                        <p class="body2 clr__white">And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
+                     </div>
+                  </div>
+                  <div class="plus col-12 col-md-6 col-lg-4">
+                     <img class="plus__img" src="./assets/svg/6.svg" alt="6">
+                     <div class="plus__title">
+                        <h3 class="clr__regular">Judicial representation</h3>
+                        <p class="body2 clr__white">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
+                     </div>
                   </div>
                </div>
             </div>
-         <!-- !second -->
-            <div class="title d-flex flex-column">
+         </div>
+      </div>
+      <section class="second-section">
+         <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide mb-60">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <!-- !carousel-item1 -->
+                     <div class="carousel-wrap">
+                        <div class="carousel__img-wrap"><img class="carousel__img" src="./assets/image/men.png" alt="men"></div>
+                        <div class="carousel__title">
+                           <div class="carousel__top">
+                              <div class="">
+                                 <a class="fw-bold title__sub-b body3">
+                                    Команда
+                                    <svg class="sub__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                       <path d="M3.5 2L8 6.5L3.5 11" stroke="inheret" stroke-width="2"/>
+                                    </svg>
+                                 </a>
+                              </div>
+                              <h1 class="clr__grd--red">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h1>
+                           </div>
+                           <div class="carousel__bottom">
+                              <p class="body2 fw-bold clr__text">Олександр Олександровський</p>
+                              <p class="body3 clr__text">Керуючий партнер</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- !carousel-item1--end -->
+                  </div>
+                  <div class="carousel-item">
+                     <!-- ?carousel-item2 -->
+                     <div class="carousel-wrap">
+                        <div class="carousel__img-wrap"><img class="carousel__img" src="./assets/image/men1.png" alt="men"></div>
+                        <div class="carousel__title">
+                           <div class="carousel__top">
+                              <div class="">
+                                 <a class="fw-bold title__sub-b body3">
+                                    Команда
+                                    <svg class="sub__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                       <path d="M3.5 2L8 6.5L3.5 11" stroke="inheret" stroke-width="2"/>
+                                    </svg>
+                                 </a>
+                              </div>
+                              <h1 class="clr__grd--red">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h1>
+                           </div>
+                           <div class="carousel__bottom">
+                              <p class="body2 fw-bold clr__text">Олександр Олександровський</p>
+                              <p class="body3 clr__text">Керуючий партнер</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- ?carousel-item2--end -->
+                  </div>
+                  <div class="carousel-item">
+                     <!-- TODOcarousel-item3 -->
+                     <div class="carousel-wrap">
+                        <div class="carousel__img-wrap"><img class="carousel__img" src="./assets/image/men2.png" alt="men"></div>
+                        <div class="carousel__title">
+                           <div class="carousel__top">
+                              <div class="">
+                                 <a class="fw-bold title__sub-b body3">
+                                    Команда
+                                    <svg class="sub__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                       <path d="M3.5 2L8 6.5L3.5 11" stroke="inheret" stroke-width="2"/>
+                                    </svg>
+                                 </a>
+                              </div>
+                              <h1 class="clr__grd--red">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h1>
+                           </div>
+                           <div class="carousel__bottom">
+                              <p class="body2 fw-bold clr__text">Олександр Олександровський</p>
+                              <p class="body3 clr__text">Керуючий партнер</p>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- TODOcarousel-item3--end -->
+                  </div>
+               </div>
+               <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+               </div>
+            </div>
+         </div>
+         <p class="mb-30 body3 clr__m-regular text-center text-uppercase fw-bold">They already trust us</p>
+         <div class="table">
+            <div class="table__logo table-1"><img class="table__img" src="./assets/svg/logo/Hillel-Logo-OneLine-White-Uk.svg" alt="hillel-school"></div>
+            <div class="table__logo table-2"><img class="table__img" src="./assets/svg/logo/WannaBiz.svg" alt="hillel-school"></div>
+            <div class="table__logo table-3"><img class="table__img" src="./assets/svg/logo/tapgerine.svg" alt="hillel-school"></div>
+            <div class="table__logo table-4"><img class="table__img" src="./assets/svg/logo/3dlook.svg" alt="hillel-school"></div>
+            <div class="table__logo table-5"><img class="table__img" src="./assets/svg/logo/orangear.svg" alt="hillel-school"></div>
+            <div class="table__logo table-6"><img class="table__img" src="./assets/svg/logo/adtellige.svg" alt="hillel-school"></div>
+            <div class="table__logo table-7"><img class="table__img" src="./assets/svg/logo/clickky.svg" alt="hillel-school"></div>
+            <div class="table__logo table-8"><img class="table__img" src="./assets/svg/logo/ecolease.svg" alt="hillel-school"></div>
+            <div class="table__logo table-9"><img class="table__img" src="./assets/svg/logo/infatek.svg" alt="hillel-school"></div>
+            <div class="table__logo table-10"><img class="table__img" src="./assets/svg/logo/citypark.svg" alt="hillel-school"></div>
+            <div class="table__logo table-11"><img class="table__img" src="./assets/svg/logo/art-print.svg" alt="hillel-school"></div>
+            <div class="table__logo table-12"><img class="table__img" src="./assets/svg/logo/Ultimatecard.svg" alt="hillel-school"></div>
+         </div>
+      </section>
+      <section class="thrid-section">
+         <div class="container">
+            <div class="mb-30 title d-flex flex-column">
                <!-- TODO subtitle__element -->
                <div class="">
-                  <a class="title__sub-a body3">
-                     Services
+                  <a class="title__sub-b body3 fw-bold ">
+                     Publications
                      <svg class="sub__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                         <path d="M3.5 2L8 6.5L3.5 11" stroke="inheret" stroke-width="2"/>
                      </svg>
                   </a>
                </div>
-               <h1 class="clr__accent">What can we do better than others?</h1>
+               <h1 class="clr__grd--red">We have something to tell</h1>
             </div>
-         <!-- !thrid -->
-            <div class="row plus__wrap">
-               <div class="plus col-12 col-md-6 col-lg-4">
-                  <img class="plus__img" src="./assets/svg/1.svg" alt="1">
-                  <div class="plus__title">
-                     <h3 class="clr__regular">IT and e-commerce</h3>
-                     <p class="body2 clr__white">An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer.</p>
+            <div class="news__border-r mb-30 row row-gap-4">
+               <div class="news col-12 col-sm-6 col-lg-4">
+                  <div class="news__img-wrap"><img class="news__img" src="./assets/image/1.png" alt="1"></div>
+                  <div class="news__title">
+                     <h4 class="clr__regular">Equity associate</h4>
+                     <p class="news__border body4 clr__text">April 22</p>
+                     <p class="body3 clr__black">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</p>
                   </div>
                </div>
-               <div class="plus col-12 col-md-6 col-lg-4">
-                  <img class="plus__img" src="./assets/svg/2.svg" alt="2">
-                  <div class="plus__title">
-                     <h3 class="clr__regular">Comprehensive daily legal support</h3>
-                     <p class="body2 clr__white">In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.</p>
+               <div class="news col-12 col-sm-6 col-lg-4">
+                  <div class="news__img-wrap"><img class="news__img" src="./assets/image/2.png" alt="2"></div>
+                  <div class="news__title">
+                     <h4 class="clr__regular">Penalty for the Good Corporation: what will happen to Google and others for violating the GDPR</h4>
+                     <p class="news__border body4 clr__text">September 29</p>
+                     <p class="body3 clr__black">And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua January 21 National Commission for Data Protection.</p>
                   </div>
                </div>
-               <div class="plus col-12 col-md-6 col-lg-4">
-                  <img class="plus__img" src="./assets/svg/3.svg" alt="3">
-                  <div class="plus__title">
-                     <h3 class="clr__regular">Structuring corporate relationships</h3>
-                     <p class="body2 clr__white">Instead of just providing legal services, we will hire a lawyer or a whole team that will fit into the daily life of your company.</p>
-                  </div>
-               </div>
-               <div class="plus col-12 col-md-6 col-lg-4">
-                  <img class="plus__img" src="./assets/svg/4.svg" alt="4">
-                  <div class="plus__title">
-                     <h3 class="clr__regular">Building contractual relations</h3>
-                     <p class="body2 clr__white">Once a week, or week after month, you have your own lawyer by your side. Anyone in the company can catch it at the coffee maker and just talk about current affairs instead of waiting for update status.</p>
-                  </div>
-               </div>
-               <div class="plus col-12 col-md-6 col-lg-4">
-                  <img class="plus__img" src="./assets/svg/5.svg" alt="5">
-                  <div class="plus__title">
-                     <h3 class="clr__regular">Protection of business, intellectual property</h3>
-                     <p class="body2 clr__white">And all the other time he will work on new diverse projects, so he will definitely not stop in professional development. One way or another, all Axon Partners will work for you instead of a corporate lawyer.</p>
-                  </div>
-               </div>
-               <div class="plus col-12 col-md-6 col-lg-4">
-                  <img class="plus__img" src="./assets/svg/6.svg" alt="6">
-                  <div class="plus__title">
-                     <h3 class="clr__regular">Judicial representation</h3>
-                     <p class="body2 clr__white">Is it a small, medium-sized company or a market leader? Local business or multinational company? Do you have your own legal department or not?</p>
+               <div class="news col-12 col-sm-12 col-lg-4">
+                  <div class="news__img-wrap"><img class="news__img" src="./assets/image/3.png" alt="3"></div>
+                  <div class="news__title">
+                     <h4 class="clr__regular">Millennial Testament</h4>
+                     <p class="news__border body4 clr__text">August 19</p>
+                     <p class="body3 clr__black">What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical legacy of the Ukrainian generation X looks like this: an apartment in…</p>
                   </div>
                </div>
             </div>
+            <footer class="footer">
+               <div class="footer__info">
+                  <p class="body2 clr__m-regular">Kyiv, Mechnikova str, 14/1</p>
+                  <div class="circle bgc-grey"></div>
+                  <a class="body4 clr__regular" href="">On map</a>
+               </div>
+               <div class="footer__comp">
+                  <p class="body2 clr__text">© 2021 HLEGAL Law company, LLC</p>
+               </div>
+               <div class="footer__contacts">
+                  <a href="https://www.facebook.com/" target="new"><img src="./assets/svg/Facebook-Footer.svg" alt="facebook"></a>
+                  <div class="circle bgc-grey"></div>
+                  <a href=”tel:0800211927” class="body2 clr__m-alt f-bold"><b>0800 211 927</b></a>
+                  <div class="circle bgc-grey"></div>
+                  <a href="mailto:contact@forstudy.space" class="body2 clr__regular fw-bold">contact@forstudy.space</a>
+               </div>
+            </footer>
          </div>
-      </div>
+      </section>
    </div>
-   <section class="second-section">
-      <div class="container">
-         <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="carousel-wrap">
-                     <div class="carousel__img-wrap"><img class="carousel__img" src="./assets/image/men.png" alt="men"></div>
-                     <div class="carousel__title">
-                        <div class="carousel__top">
-                           <div class="">
-                              <a class="title__sub-b body3">
-                                 Services
-                                 <svg class="sub__icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                                    <path d="M3.5 2L8 6.5L3.5 11" stroke="inheret" stroke-width="2"/>
-                                 </svg>
-                              </a>
-                           </div>
-                           <h1>Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h1>
-                        </div>
-                        <div class="carousel__bottom">
-                           <p class="body2 fw-bold clr__text">Олександр Олександровський</p>
-                           <p class="body3 clr__text">Керуючий партнер</p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <img src="./assets/image/men.png" class="d-block w-100" alt="2">
-               </div>
-               <div class="carousel-item">
-                  <img src="./assets/image/men.png" class="d-block w-100" alt="3">
-               </div>
-            </div>
-            <div class="carousel-indicators">
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-         </div>
-      </div>
-   </section>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
