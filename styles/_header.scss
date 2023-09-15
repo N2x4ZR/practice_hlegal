@@ -127,7 +127,7 @@
       right: -270px;
       top: 50px;
       width: 256px;
-      padding: 52px 20px 40px 20px;
+      padding: 52px 20px 20px 20px;
       background-color: $main-alt;
       visibility: hidden;
       &__list {
@@ -189,3 +189,11 @@
    }
 }
 
+.btn-id {
+   &:hover {
+      transform: scale(1.25);
+      background-color: $accent;
+      border-radius: 50%;
+      transition: transform .2s ease;
+   }
+}
