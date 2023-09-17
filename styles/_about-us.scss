@@ -1,0 +1,37 @@
+.main {
+   &-info {
+      &__title {
+         margin-bottom: toRem(28);
+      }
+   }
+   &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      padding-left: toRem(30);
+      border-left: toRem(4) solid $grey-separator;
+   }
+   &__img-team {
+      width: 100%;
+      object-fit: cover;
+   }
+}
+
+.achievements {
+   background-color: $grey-bg;
+   padding: toRem(30) 0;
+}
+
+.ach{
+   &__img {
+      max-width: 100%;
+      padding: toRem(25);
+      &-wrap {
+         border-radius: toRem(12);
+         background-color: $basic-white;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+      }
+   }
+}
